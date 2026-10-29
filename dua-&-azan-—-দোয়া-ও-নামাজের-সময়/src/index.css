@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-arabic: 'Amiri', 'Noto Naskh Arabic', 'Scheherazade New', serif;
+    --font-bengali: 'Hind Siliguri', 'Noto Sans Bengali', system-ui, sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    font-family: var(--font-bengali);
+    touch-action: manipulation;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+    padding-left: env(safe-area-inset-left, 0px);
+    padding-right: env(safe-area-inset-right, 0px);
+  }
+
+  .font-arabic {
+    font-family: var(--font-arabic);
+  }
+
+  .font-bengali {
+    font-family: var(--font-bengali);
+  }
+}
+
+/* Windows Desktop Sleek Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.03);
+}
+.dark ::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.03);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(15, 118, 110, 0.35);
+  border-radius: 9999px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(15, 118, 110, 0.6);
+}
+
+/* Subtle glowing pulse for current prayer */
+@keyframes prayerPulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(15, 118, 110, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 0 8px rgba(15, 118, 110, 0);
+  }
+}
+.prayer-active-pulse {
+  animation: prayerPulse 3s infinite;
+}
+
+/* Prevent accidental text highlight during fast Tasbih tapping on mobile */
+.tap-highlight-none {
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}

@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f766e" />
+      <stop offset="100%" stop-color="#042f2e" />
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fde047" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="108" fill="url(#grad)" />
+  <circle cx="256" cy="256" r="210" fill="none" stroke="#2dd4bf" stroke-width="3" stroke-opacity="0.3" stroke-dasharray="8 8" />
+  
+  <!-- Crescent & Star -->
+  <path d="M 285 100 A 45 45 0 1 0 315 170 A 36 36 0 1 1 285 100 Z" fill="url(#gold)" />
+  <polygon points="325,120 329,132 342,132 332,140 335,152 325,145 315,152 318,140 308,132 321,132" fill="url(#gold)" transform="scale(0.8) translate(80, 20)" />
+
+  <!-- Mosque Dome and Minarets Silhouette -->
+  <!-- Center Main Dome -->
+  <path d="M 256 165 C 230 205 185 240 185 300 L 327 300 C 327 240 282 205 256 165 Z" fill="#ffffff" />
+  <path d="M 256 150 L 256 165" stroke="url(#gold)" stroke-width="4" stroke-linecap="round" />
+  <circle cx="256" cy="146" r="4" fill="url(#gold)" />
+
+  <!-- Left Minaret -->
+  <rect x="110" y="220" width="30" height="150" rx="4" fill="#ffffff" />
+  <path d="M 125 180 L 110 220 L 140 220 Z" fill="url(#gold)" />
+  <circle cx="125" cy="175" r="3" fill="url(#gold)" />
+  <!-- Left Spire window -->
+  <rect x="120" y="240" width="10" height="20" rx="5" fill="#0f766e" />
+
+  <!-- Right Minaret -->
+  <rect x="372" y="220" width="30" height="150" rx="4" fill="#ffffff" />
+  <path d="M 387 180 L 372 220 L 402 220 Z" fill="url(#gold)" />
+  <circle cx="387" cy="175" r="3" fill="url(#gold)" />
+  <!-- Right Spire window -->
+  <rect x="382" y="240" width="10" height="20" rx="5" fill="#0f766e" />
+
+  <!-- Base Building -->
+  <rect x="140" y="300" width="232" height="90" rx="6" fill="#f0fdfa" />
+  
+  <!-- Central Arch Gate -->
+  <path d="M 226 390 L 226 335 C 226 318 286 318 286 335 L 286 390 Z" fill="#0f766e" />
+  
+  <!-- Side Arches -->
+  <path d="M 160 390 L 160 350 C 160 338 200 338 200 350 L 200 390 Z" fill="#115e59" opacity="0.8" />
+  <path d="M 312 390 L 312 350 C 312 338 352 338 352 350 L 352 390 Z" fill="#115e59" opacity="0.8" />
+
+  <!-- Bottom platform line -->
+  <rect x="90" y="390" width="332" height="12" rx="6" fill="url(#gold)" />
+</svg>
